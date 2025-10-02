@@ -1,0 +1,6 @@
+lua
+luarocks
+tpm
+tmux
+vim
+nvim

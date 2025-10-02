@@ -4,3 +4,5 @@ tpm
 tmux
 vim
 nvim
+tree
+git

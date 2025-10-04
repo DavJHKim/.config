@@ -4,31 +4,27 @@ require("config.lazy")
 vim.cmd("syntax on")
 
 -- Search settings
-vim.opt.ignorecase = true   -- set ic
-vim.opt.incsearch = true    -- set is
-vim.opt.hlsearch = true     -- set hlsearch
+vim.opt.ignorecase = true -- set ic
+vim.opt.incsearch = true -- set is
+vim.opt.hlsearch = true -- set hlsearch
 
--- Colorscheme 
+-- Colorscheme
 vim.cmd("colorscheme vim")
 
--- Line numbers
+-- Line numbers 
 vim.opt.number = true
 
--- Command-line completion menu
+-- Command-line completion menu 
 vim.opt.wildmenu = true
 
--- Cursor highlighting
+-- Highlight ONLY the current line number
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
-
--- set the highlight color for both line + column
+vim.opt.cursorlineopt = "number"  -- restrict highlight to the number column only
 vim.cmd([[
-  highlight CursorLine   cterm=NONE ctermbg=darkgray guibg=#2e2e2e
-  highlight CursorColumn cterm=NONE ctermbg=darkgray guibg=#2e2e2e
-  highlight CursorLineNr cterm=NONE ctermbg=darkgray guibg=#2e2e2e guifg=#ffffff
+  highlight CursorLineNr cterm=bold ctermfg=red guifg=#ff0000
 ]])
 
--- Indentation
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+-- Indentation 
+vim.opt.tabstop = 2 
+vim.opt.shiftwidth = 2 
 vim.opt.expandtab = true

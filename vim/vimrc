@@ -7,9 +7,9 @@ set hlsearch
 
 " Colorscheme (fallback if 'vim' doesn't exist)
 try
-  colorscheme industry
+  colorscheme vim
 catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
+  colorscheme industry
 endtry
 
 " Line numbers
@@ -26,8 +26,7 @@ endif
 
 highlight CursorLineNr cterm=bold ctermfg=red guifg=#ff0000
 
-" Indentation
+" indentation
 set tabstop=2
 set shiftwidth=2
 set expandtab
-

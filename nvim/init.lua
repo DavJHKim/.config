@@ -12,10 +12,10 @@ vim.opt.hlsearch = true -- set hlsearch
 vim.cmd("colorscheme vim")
 
 -- Line numbers 
-vim.opt.number = true
+vim.cmd("set number relativenumber")
 
 -- Command-line completion menu 
-vim.opt.wildmenu = true
+vim.cmd("set wildmode=list:longest,list:full")
 
 -- Highlight ONLY the current line number
 vim.opt.cursorline = true

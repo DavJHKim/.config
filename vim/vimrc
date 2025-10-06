@@ -13,10 +13,10 @@ catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 
 " Line numbers
-set number
+set number relativenumber
 
 " Command-line completion menu
-set wildmenu
+set wildmode=list:longest,list:full
 
 " Highlight ONLY the current line number
 set cursorline

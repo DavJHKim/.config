@@ -1,22 +1,40 @@
-syntax on
-colorscheme darkblue
+sic Vim Configuration
+" ================================
+if has('nvim')
+  " You're running Neovim, not Vim — this file is for Vim.
+  " You can keep a tiny message or just ignore.
+endif
 
-set ic
-set is
+syntax on
+
+" Search
+set ignorecase
+set incsearch
 set hlsearch
 
+" Colorscheme (fallback if 'vim' doesn't exist)
+try
+  colorscheme industry
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme default
+endtry
+
+" Line numbers
 set number
 
+" Command-line completion menu
 set wildmenu
 
+" Highlight ONLY the current line number
 set cursorline
+if exists('&cursorlineopt')
+  set cursorlineopt=number
+endif
 
-set cursorcolumn
-set colorcolumn=80
-highlight CursorLine cterm=NONE ctermbg=darkgray guibg=#2e2e2e
+highlight CursorLineNr cterm=bold ctermfg=red guifg=#ff0000
 
+" Indentation
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
 

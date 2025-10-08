@@ -17,6 +17,10 @@ vim.cmd("set number relativenumber")
 -- Command-line completion menu 
 vim.cmd("set wildmode=list:longest,list:full")
 
+-- Copy and paste to clipboard
+vim.cmd('vnoremap <C-c> "+y')
+vim.cmd('map <C-v> "+p')
+
 -- Highlight ONLY the current line number
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"  -- restrict highlight to the number column only

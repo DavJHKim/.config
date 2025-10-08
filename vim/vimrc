@@ -15,6 +15,10 @@ endtry
 " Line numbers
 set number relativenumber
 
+" Remap the system register clipboard for copy/paste
+vnoremap <C-c> "+y
+map <C-v> "+p
+
 " Command-line completion menu
 set wildmode=list:longest,list:full
 

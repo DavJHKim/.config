@@ -1,0 +1,1 @@
+hella sick neovim config 😎

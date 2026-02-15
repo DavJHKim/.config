@@ -73,6 +73,11 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 
 make_transparent()
 
+-- pwsh
+--vim.opt.shell = "pwsh.exe"
+--vim.opt.shellcmdflag = "-NoLogo -ExecutionPolicy RemoteSigned -Command"
+--vim.opt.shellquote = '"'
+--vim.opt.shellxquote = ""
 
 -- Search settings
 vim.opt.ignorecase = true -- set ic

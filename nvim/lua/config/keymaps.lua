@@ -22,7 +22,7 @@ vim.keymap.set('n', '<leader>fh', telescope.help_tags, { desc = 'Telescope help 
 vim.keymap.set('n', '<leader>fc', function()
   telescope.find_files({
     prompt_title = "Neovim Config",
-    cwd = vim.fn.stdpath('config'), 
+    cwd = vim.fn.stdpath('config'),
   })
 end, { desc = "Search Neovim Config" })
 

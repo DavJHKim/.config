@@ -5,11 +5,11 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 -- Windows
-config.default_prog = { "pwsh.exe", "-NoLogo" }
+--config.default_prog = { "pwsh.exe", "-NoLogo" }
 
--- MacO
---config.macos_window_background_blur = 40
---config.native_macos_fullscreen_mode = true
+-- MacOs
+config.macos_window_background_blur = 40
+config.native_macos_fullscreen_mode = true
 
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false

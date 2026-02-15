@@ -24,7 +24,7 @@ config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 32
 config.adjust_window_size_when_changing_font_size = false
-config.font = wezterm.font('JetBrains Mono')
+config.font = wezterm.font('JetBrainsMono Nerd Font')
 config.window_background_image = constants.bg_image
 
 

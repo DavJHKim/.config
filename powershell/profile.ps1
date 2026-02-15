@@ -1,9 +1,12 @@
-$env:STARSHIP_CONFIG = Join-Path $HOME ".config\starship.toml"
 $env:XDG_CONFIG_HOME = Join-Path $HOME ".config"
+
+#$env:STARSHIP_CONFIG = Join-Path $HOME ".config\starship.toml"
 #Invoke-Expression (&starship init powershell)
 
-# Load environment variables from $HOME/.config/.env
+oh-my-posh init pwsh --config "$HOME\.config\ohmyposh\config.json" | Invoke-Expression
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
+# Load environment variables from $HOME/.config/.env
 $envFile = Join-Path $HOME ".config/.env"
 
 if (Test-Path $envFile) {

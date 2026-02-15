@@ -1,8 +1,5 @@
 $env:XDG_CONFIG_HOME = Join-Path $HOME ".config"
 
-#$env:STARSHIP_CONFIG = Join-Path $HOME ".config\starship.toml"
-#Invoke-Expression (&starship init powershell)
-
 oh-my-posh init pwsh --config "$HOME\.config\ohmyposh\config.json" | Invoke-Expression
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 

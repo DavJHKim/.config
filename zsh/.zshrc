@@ -1,6 +1,5 @@
-# Staship
-export STARTSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-eval "$(starship init zsh)"
+# Oh My Posh
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.json)"
 
 set -a
 source ~/.config/.env

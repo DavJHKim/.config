@@ -4,12 +4,19 @@ local constants = require("constants")
 local act = wezterm.action
 local config = wezterm.config_builder()
 
--- Windows
---config.default_prog = { "pwsh.exe", "-NoLogo" }
+-- Checking for Operating System
+local target = wezterm.target_triple
 
--- MacOs
-config.macos_window_background_blur = 40
-config.native_macos_fullscreen_mode = true
+if target:find("windows") then
+  print("Running on Windows")
+  config.default_prog = { "pwsh.exe", "-NoLogo" }
+elseif target:find("apple") then
+  print("Running on macOS")
+  config.macos_window_background_blur = 40
+  config.native_macos_fullscreen_mode = true
+elseif target:find("linux") then
+  print("Running on Linux")
+end
 
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false

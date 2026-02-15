@@ -79,6 +79,11 @@ make_transparent()
 --vim.opt.shellquote = '"'
 --vim.opt.shellxquote = ""
 
+-- SQL Server
+vim.g.dbs = {
+    sql_server_dev = os.getenv("SQL_SERVER_DEV")
+}
+
 -- Search settings
 vim.opt.ignorecase = true -- set ic
 vim.opt.incsearch = true -- set is

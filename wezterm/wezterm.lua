@@ -18,6 +18,13 @@ elseif target:find("linux") then
   print("Running on Linux")
 end
 
+-- Toggle bar function
+wezterm.on('toggle-tab-bar', function(window, pane)
+  local overrides = window:get_config_overrides() or {}
+  overrides.enable_tab_bar = not overrides.enable_tab_bar
+  window:set_config_overrides(overrides)
+end)
+
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
@@ -29,7 +36,7 @@ config.window_background_image = constants.bg_image
 
 config.window_background_opacity = 1.0 
 config.window_background_image_hsb = {
-  brightness = 0.03,  
+  brightness = 0.05,  
   hue = 1.0,
   saturation = 1.0,
 }
@@ -92,6 +99,20 @@ config.keys = {
   
   -- Optional: close current pane
   { key = "w", mods = "CTRL|SHIFT|ALT", action = act.CloseCurrentPane { confirm = true } },
+
+  -- Toggle tab bar
+  { key = 'b', mods = 'CTRL|SHIFT', action = wezterm.action.EmitEvent('toggle-tab-bar')},
+
+  -- Quick ALT navigation for tabs
+  { key = '1', mods = 'ALT', action = wezterm.action.ActivateTab(0) },
+  { key = '2', mods = 'ALT', action = wezterm.action.ActivateTab(1) },
+  { key = '3', mods = 'ALT', action = wezterm.action.ActivateTab(2) },
+  { key = '4', mods = 'ALT', action = wezterm.action.ActivateTab(3) },
+  { key = '5', mods = 'ALT', action = wezterm.action.ActivateTab(4) },
+  { key = '6', mods = 'ALT', action = wezterm.action.ActivateTab(5) },
+  { key = '7', mods = 'ALT', action = wezterm.action.ActivateTab(6) },
+  { key = '8', mods = 'ALT', action = wezterm.action.ActivateTab(7) },
+  { key = '9', mods = 'ALT', action = wezterm.action.ActivateTab(8) },
 }
 
 config.window_padding = {

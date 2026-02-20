@@ -1,5 +1,5 @@
 -- Colorscheme & Transparency
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme gruvbox")
 
 local function make_transparent()
   local groups = {

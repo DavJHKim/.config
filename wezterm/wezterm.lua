@@ -27,6 +27,14 @@ config.adjust_window_size_when_changing_font_size = false
 config.font = wezterm.font('JetBrainsMono Nerd Font')
 config.window_background_image = constants.bg_image
 
+config.window_background_opacity = 1.0 
+config.window_background_image_hsb = {
+  brightness = 0.03,  
+  hue = 1.0,
+  saturation = 1.0,
+}
+
+
 
 -- Classic tmux green theme
 config.colors = {

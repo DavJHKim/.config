@@ -8,6 +8,9 @@ M.bg_blurred_darker = wezterm.home_dir
 M.bg_blurred = wezterm.home_dir
   .. '/.config/wezterm/assets/bg-blurred.png'
 
-M.bg_image = M.bg_blurred
+M.bg_foggy_trees = wezterm.home_dir
+  .. '/.config/wezterm/assets/bg-foggy-trees.jpg'
+
+M.bg_image = M.bg_foggy_trees
 
 return M

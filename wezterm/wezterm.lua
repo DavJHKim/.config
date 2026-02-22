@@ -1,8 +1,8 @@
 local wezterm = require("wezterm")
 local bg_constants = require("bg-constants")
-
 local act = wezterm.action
 local config = wezterm.config_builder()
+local keymaps = require("keymaps")
 
 -- Checking for Operating System
 local target = wezterm.target_triple
@@ -42,7 +42,7 @@ config.window_background_image_hsb = {
   saturation = bg_constants.saturation,
 }
 
--- Classic tmux green theme
+-- Grubox theme for tab bar 
 config.colors = {
   tab_bar = {
     background = "#282828", -- Gruvbox dark background
@@ -80,46 +80,8 @@ config.colors = {
 -- Colors
 config.color_scheme = 'GruvboxDark'
 
-config.keys = {
-  {
-    key = 'E',
-    mods = 'CTRL|SHIFT',
-    action = act.PromptInputLine {
-      description = 'Enter new name for tab',
-      action = wezterm.action_callback(function(window, pane, line)
-        if line then
-          window:active_tab():set_title(line)
-        end
-      end),
-    },
-  },
-
-  { key = "h", mods = "CTRL|SHIFT|ALT", action = act.ActivatePaneDirection "Left" },
-  { key = "j", mods = "CTRL|SHIFT|ALT", action = act.ActivatePaneDirection "Down" },
-  { key = "k", mods = "CTRL|SHIFT|ALT", action = act.ActivatePaneDirection "Up" },
-  { key = "l", mods = "CTRL|SHIFT|ALT", action = act.ActivatePaneDirection "Right" },
-  
-  -- Optional: split panes like Vim
-  { key = "v", mods = "CTRL|SHIFT|ALT", action = act.SplitHorizontal { domain = "CurrentPaneDomain" } },
-  { key = "s", mods = "CTRL|SHIFT|ALT", action = act.SplitVertical { domain = "CurrentPaneDomain" } },
-  
-  -- Optional: close current pane
-  { key = "w", mods = "CTRL|SHIFT|ALT", action = act.CloseCurrentPane { confirm = true } },
-
-  -- Toggle tab bar
-  { key = 'b', mods = 'CTRL|SHIFT', action = wezterm.action.EmitEvent('toggle-tab-bar')},
-
-  -- Quick ALT navigation for tabs
-  { key = '1', mods = 'ALT', action = wezterm.action.ActivateTab(0) },
-  { key = '2', mods = 'ALT', action = wezterm.action.ActivateTab(1) },
-  { key = '3', mods = 'ALT', action = wezterm.action.ActivateTab(2) },
-  { key = '4', mods = 'ALT', action = wezterm.action.ActivateTab(3) },
-  { key = '5', mods = 'ALT', action = wezterm.action.ActivateTab(4) },
-  { key = '6', mods = 'ALT', action = wezterm.action.ActivateTab(5) },
-  { key = '7', mods = 'ALT', action = wezterm.action.ActivateTab(6) },
-  { key = '8', mods = 'ALT', action = wezterm.action.ActivateTab(7) },
-  { key = '9', mods = 'ALT', action = wezterm.action.ActivateTab(8) },
-}
+-- keymaps
+config.keys = keymaps.get_keys() 
 
 config.window_padding = {
   left = 0,
@@ -127,6 +89,5 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
-
 
 return config

@@ -1,5 +1,5 @@
-local wezterm = require 'wezterm'
-local constants = require("constants")
+local wezterm = require("wezterm")
+local bg_constants = require("bg-constants")
 
 local act = wezterm.action
 local config = wezterm.config_builder()
@@ -32,16 +32,15 @@ config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 32
 config.adjust_window_size_when_changing_font_size = false
 config.font = wezterm.font('JetBrainsMono Nerd Font')
-config.window_background_image = constants.bg_image
 
+-- Background
+config.window_background_image = bg_constants.bg_image
 config.window_background_opacity = 1.0 
 config.window_background_image_hsb = {
-  brightness = 0.05,  
-  hue = 1.0,
-  saturation = 1.0,
+  brightness = bg_constants.brightness,  
+  hue = bg_constants.hue,
+  saturation = bg_constants.saturation,
 }
-
-
 
 -- Classic tmux green theme
 config.colors = {

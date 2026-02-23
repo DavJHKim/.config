@@ -26,20 +26,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "right",
-      "segments": [
-        {
-          "type": "executiontime",
-          "style": "plain",
-          "foreground": "#98971a",
-          "properties": {
-            "threshold": 2000
-          }
-        }
-      ]
     }
   ]
 }

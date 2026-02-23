@@ -1,4 +1,4 @@
--- Colorscheme & Transparency
+-- Colorscheme & Transparenxy
 vim.cmd("colorscheme gruvbox")
 
 local function make_transparent()

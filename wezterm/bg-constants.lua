@@ -37,7 +37,7 @@ M.misaka_pass = wezterm.home_dir
   .. '/.config/wezterm/assets/misaka_pass.jpg'
 
 -- Changing image
-M.bg_image = M.bg_foggy_trees
+M.bg_image = M.a_bridge_with_clouds_in_the_sky
 
 -- Apppearance
 M.brightness = 1.0

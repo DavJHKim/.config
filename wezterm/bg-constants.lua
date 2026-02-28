@@ -39,8 +39,11 @@ M.misaka_pass = wezterm.home_dir
 M.pires = wezterm.home_dir
   .. '/.config/wezterm/assets/pires.jpg'
 
+M.powerline = wezterm.home_dir
+  .. '/.config/wezterm/assets/powerline.png'
+
 -- Changing image
-M.bg_image = M.a_snowy_mountain_tops
+M.bg_image = M.powerline
 
 -- Apppearance
 M.brightness = 1.0
@@ -67,6 +70,8 @@ elseif M.bg_image == M.misaka_pass then
   M.brightness = 0.02
 elseif M.bg_image == M.pires then
   M.brightness = 0.08
+elseif M.bg_image == M.powerline then
+  M.brightness = 0.02
 end
 
 return M

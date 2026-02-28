@@ -1,29 +1,13 @@
--- Lazy 
+-- Importing config 
 require("config.lazy") 
 require("config.keymaps")
 require("config.nvim-dap")
 require("config.appearance")
+require("config.os")
+require("config.cmp")
 
 -- Enable syntax highlighting
 vim.cmd("syntax on")
-
--- Operating System specific
-local os_name = vim.loop.os_uname().sysname
-
-if os_name == "Windows_NT" then
-  -- pwsh
-  vim.opt.shell = "pwsh.exe"
-  vim.opt.shellcmdflag = "-NoLogo -ExecutionPolicy RemoteSigned -Command"
-  vim.opt.shellquote = '"'
-  vim.opt.shellxquote = ""
-elseif os_name == "Darwin" then
-elseif os_name == "Linux" then
-end
-
--- SQL Server
-vim.g.dbs = {
-    sql_server_dev = os.getenv("SQL_SERVER_DEV")
-}
 
 -- Search settings
 vim.opt.ignorecase = true -- set ic
@@ -38,17 +22,6 @@ vim.diagnostic.config({
   virtual_lines = {
     current_line = true
   }
-})
-
--- Autocomplete 
-local cmp = require("cmp")
-cmp.setup.filetype({"sql", "mysql", "plsql", "cs", "lua"},{
-    sources = cmp.config.sources({
-        { name = "vim-dadbod-completion" },
-        { name = "nvim_lsp"},
-    }, {
-        { name = "buffer" },
-    })
 })
 
 -- Line numbers 

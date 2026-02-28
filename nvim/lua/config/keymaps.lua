@@ -26,6 +26,13 @@ vim.keymap.set('n', '<leader>fc', function()
   })
 end, { desc = "Search Neovim Config" })
 
+vim.keymap.set("n", "<leader>fd", function()
+  builtin.diagnostics({
+    bufnr = nil,          -- nil = entire workspace
+    severity_limit = vim.diagnostic.severity.ERROR,
+  })
+end, { desc = "List workspace LSP errors" })
+
 -- Telescope delete buffers
 local ok, telescope = pcall(require, "telescope")
 if not ok then
@@ -74,7 +81,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 local dap = require("dap")
 local dapui = require("dapui")
 
-vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint)
+vim.keymap.set("n", "<F9>", dap.toggle_breakpoint)
 vim.keymap.set("n", "<leader>dgb", dap.run_to_cursor)
 -- Eval var under cursor
 vim.keymap.set("n", "<leader>d?", function()
@@ -87,11 +94,10 @@ vim.keymap.set("n", "<leader>du", function()
   dapui.toggle()
 end, { desc = "DAP UI Toggle" })
 
-vim.keymap.set("n", "<leader>dh", dap.continue)
-vim.keymap.set("n", "<leader>dj", dap.step_over)
-vim.keymap.set("n", "<leader>dk", dap.step_into)
-vim.keymap.set("n", "<leader>dl", dap.step_out)
-vim.keymap.set("n", "<leader>d;", dap.step_back)
+vim.keymap.set("n", "<F5>", dap.continue)
+vim.keymap.set("n", "<F10>", dap.step_over)
+vim.keymap.set("n", "<F11>", dap.step_into)
+vim.keymap.set("n", "<F12>", dap.step_out)
 vim.keymap.set("n", "<leader>dr", dap.repl.open)
 vim.keymap.set("n", "<leader>drr", dap.restart)
 vim.keymap.set("n", "<leader>dq", function()

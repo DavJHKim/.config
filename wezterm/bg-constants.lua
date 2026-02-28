@@ -36,8 +36,11 @@ M.the_great_wave = wezterm.home_dir
 M.misaka_pass = wezterm.home_dir
   .. '/.config/wezterm/assets/misaka_pass.jpg'
 
+M.pires = wezterm.home_dir
+  .. '/.config/wezterm/assets/pires.jpg'
+
 -- Changing image
-M.bg_image = M.a_bridge_with_clouds_in_the_sky
+M.bg_image = M.a_snowy_mountain_tops
 
 -- Apppearance
 M.brightness = 1.0
@@ -62,6 +65,8 @@ elseif M.bg_image == M.the_great_wave then
   M.brightness = 0.02
 elseif M.bg_image == M.misaka_pass then
   M.brightness = 0.02
+elseif M.bg_image == M.pires then
+  M.brightness = 0.08
 end
 
 return M

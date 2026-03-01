@@ -1,5 +1,7 @@
 $env:XDG_CONFIG_HOME = Join-Path $HOME ".config"
 
+$env:YAZI_CONFIG_HOME = "$HOME\.config\yazi"
+
 oh-my-posh init pwsh --config "$HOME\.config\ohmyposh\config.json" | Invoke-Expression
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 

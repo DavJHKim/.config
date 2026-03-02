@@ -1,4 +1,4 @@
 # .config
 
-personal .config files 😎!
+personal .config files 😎
 

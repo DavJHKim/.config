@@ -5,6 +5,7 @@ require("config.nvim-dap")
 require("config.appearance")
 require("config.os")
 require("config.cmp")
+require("config.secrets")
 
 -- Enable syntax highlighting
 vim.cmd("syntax on")

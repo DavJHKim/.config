@@ -55,8 +55,8 @@ Set-Alias touch New-Item
 # Git Shortcuts
 # -------------------------------
 
-function gs { git status }
-function ga { git add . }
-function gc { git commit -m $args }
-function gp { git push }
-function gl { git log --oneline --graph --decorate }
+function gstatus { git status }
+function gadd { git add . }
+function gcom { git commit -m "$args" }
+function gpush { git push }
+function glog { git log --oneline --graph --decorate }

@@ -29,11 +29,11 @@ eval "$(zoxide init zsh)"
 # -------------------------------
 
 alias ll='ls -lah'
-alias gs='git status'
-alias ga='git add .'
-alias gc='git commit -m'
-alias gp='git push'
-alias gl='git log --oneline --graph --decorate'
+alias gstatus='git status'
+alias gadd='git add .'
+alias gcom='git commit -m'
+alias gpush='git push'
+alias glog='git log --oneline --graph --decorate'
 
 # -------------------------------
 # FZF integration (if installed)

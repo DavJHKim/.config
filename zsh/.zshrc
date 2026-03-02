@@ -34,6 +34,7 @@ alias gadd='git add .'
 alias gcom='git commit -m'
 alias gpush='git push'
 alias glog='git log --oneline --graph --decorate'
+alias gpull='git pull'
 
 # -------------------------------
 # FZF integration (if installed)

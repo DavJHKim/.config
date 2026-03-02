@@ -59,4 +59,5 @@ function gstatus { git status }
 function gadd { git add . }
 function gcom { git commit -m "$args" }
 function gpush { git push }
+function gpull { git pull }
 function glog { git log --oneline --graph --decorate }

@@ -43,7 +43,7 @@ M.powerline = wezterm.home_dir
   .. '/.config/wezterm/assets/powerline.png'
 
 -- Changing image
-M.bg_image = M.a_snowy_mountain_tops
+M.bg_image = M.a_bridge_with_clouds_in_the_sky
 
 -- Apppearance
 M.brightness = 1.0

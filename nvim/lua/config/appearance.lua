@@ -1,5 +1,5 @@
 -- Colorscheme & Transparency testing
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme dracula-soft")
 
 local function make_transparent()
   local groups = {

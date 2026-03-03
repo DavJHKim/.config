@@ -43,36 +43,73 @@ config.window_background_image_hsb = {
 }
 
 -- Grubox theme for tab bar 
+--config.colors = {
+--  tab_bar = {
+--    background = "#282828", -- Gruvbox dark background
+--
+--    active_tab = {
+--      bg_color = "#fabd2f", -- Gruvbox yellow
+--      fg_color = "#282828", -- Dark text
+--      intensity = "Bold",
+--    },
+--
+--    inactive_tab = {
+--      bg_color = "#3c3836", -- Dark gray
+--      fg_color = "#ebdbb2", -- Light foreground
+--    },
+--
+--    inactive_tab_hover = {
+--      bg_color = "#504945", -- Slightly lighter gray
+--      fg_color = "#fbf1c7", -- Brighter foreground
+--      italic = true,
+--    },
+--
+--    new_tab = {
+--      bg_color = "#3c3836",
+--      fg_color = "#ebdbb2",
+--    },
+--
+--    new_tab_hover = {
+--      bg_color = "#458588", -- Gruvbox blue
+--      fg_color = "#fbf1c7",
+--      italic = true,
+--    },
+--  },
+--}
+
+-- Neutral modern tab bar (theme-agnostic)
+
 config.colors = {
   tab_bar = {
-    background = "#282828", -- Gruvbox dark background
+    -- Slightly transparent neutral background
+    background = "#1f1f1f",
 
     active_tab = {
-      bg_color = "#fabd2f", -- Gruvbox yellow
-      fg_color = "#282828", -- Dark text
+      bg_color = "#3a3a3a",
+      fg_color = "#ffffff",
       intensity = "Bold",
     },
 
     inactive_tab = {
-      bg_color = "#3c3836", -- Dark gray
-      fg_color = "#ebdbb2", -- Light foreground
+      bg_color = "#2a2a2a",
+      fg_color = "#c8c8c8",
     },
 
     inactive_tab_hover = {
-      bg_color = "#504945", -- Slightly lighter gray
-      fg_color = "#fbf1c7", -- Brighter foreground
-      italic = true,
+      bg_color = "#343434",
+      fg_color = "#ffffff",
+      italic = false,
     },
 
     new_tab = {
-      bg_color = "#3c3836",
-      fg_color = "#ebdbb2",
+      bg_color = "#2a2a2a",
+      fg_color = "#c8c8c8",
     },
 
     new_tab_hover = {
-      bg_color = "#458588", -- Gruvbox blue
-      fg_color = "#fbf1c7",
-      italic = true,
+      bg_color = "#404040",
+      fg_color = "#ffffff",
+      italic = false,
     },
   },
 }

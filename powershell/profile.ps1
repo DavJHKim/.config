@@ -1,3 +1,5 @@
+$ProgressPreference = 'SilentlyContinue'
+
 $env:XDG_CONFIG_HOME = Join-Path $HOME ".config"
 
 $env:YAZI_CONFIG_HOME = "$HOME\.config\yazi"

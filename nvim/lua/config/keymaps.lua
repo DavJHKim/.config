@@ -19,12 +19,20 @@ vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', telescope.help_tags, { desc = 'Telescope help tags' })
+
 vim.keymap.set('n', '<leader>fc', function()
   telescope.find_files({
     prompt_title = "Neovim Config",
     cwd = vim.fn.stdpath('config'),
   })
 end, { desc = "Search Neovim Config" })
+
+vim.keymap.set('n', '<leader>fC', function()
+  require('telescope.builtin').find_files({
+    prompt_title = "Dot Config",
+    cwd = vim.fn.expand("~/.config"),
+  })
+end, { desc = "Search ~/.config" })
 
 vim.keymap.set("n", "<leader>fd", function()
   builtin.diagnostics({

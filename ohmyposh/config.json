@@ -12,7 +12,7 @@
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#fabd2f",
+          "foreground": "white",
           "properties": {
             "style": "folder"
           }
@@ -20,7 +20,7 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#458588",
+          "foreground": "white",
           "properties": {
             "branch_icon": " "
           }

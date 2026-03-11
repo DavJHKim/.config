@@ -37,7 +37,7 @@ config.font = wezterm.font('JetBrainsMono Nerd Font')
 
 -- Background
 --config.window_background_image = bg_constants.bg_image
-config.window_background_opacity = 0.75
+config.window_background_opacity = 1
 config.window_background_image_hsb = {
   brightness = bg_constants.brightness,  
   hue = bg_constants.hue,

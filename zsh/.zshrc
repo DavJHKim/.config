@@ -5,6 +5,8 @@ set -a
 source ~/.config/.env
 set +a
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # -------------------------------
 # History Settings
 # -------------------------------

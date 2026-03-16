@@ -153,6 +153,11 @@ window_rules:
         window_class: { not_regex: 'OpusApp' }
       - window_process: { equals: 'POWERPNT' }
         window_class: { not_regex: 'PPTFrameClass' }
+      - window_process: { equals: 'devenv' }
+        window_class: { regex: 'WindowsForms10.*' }
+      - window_process: { equals: 'devenv' }
+        window_title: { regex: '.*Designer.*|.*Properties.*|.*Options.*' }
+
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.

@@ -217,14 +217,6 @@ keybindings:
   - commands: ['toggle-tiling-direction']
     bindings: ['alt+v']
 
-  # Change focus from tiling windows -> floating -> fullscreen.
-  - commands: ['wm-cycle-focus']
-    bindings: ['alt+space']
-
-  # Change the focused window to be floating.
-  - commands: ['toggle-floating --centered']
-    bindings: ['alt+shift+space']
-
   # Change the focused window to be tiling.
   - commands: ['toggle-tiling']
     bindings: ['alt+t']

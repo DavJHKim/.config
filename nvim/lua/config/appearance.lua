@@ -1,5 +1,5 @@
 -- Colorscheme & Transparency testing
-vim.cmd("colorscheme tokyonight")
+vim.cmd("colorscheme gruvbox")
 
 local function make_transparent()
   local groups = {
@@ -58,10 +58,10 @@ local function make_transparent()
   end
 end
 
-vim.api.nvim_create_autocmd("ColorScheme", {
-  callback = make_transparent,
-})
+--vim.api.nvim_create_autocmd("ColorScheme", {
+--  callback = make_transparent,
+--})
 
-make_transparent()
+--make_transparent()
 
 

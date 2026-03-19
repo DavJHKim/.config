@@ -11,7 +11,7 @@ komorebi:
 bars:
   primary-bar:
     enabled: true
-    screens: ["primary"]
+    screens: ["*"]
     class_name: "yasb-bar"
     alignment:
       position: "top"

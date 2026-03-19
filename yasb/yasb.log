@@ -325,3 +325,23 @@
 2026-03-18 21:41:34,514 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
 2026-03-18 21:41:34,517 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kimdb1\.config\yasb
 2026-03-18 21:41:34,517 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-03-18 21:56:11,908 [DEBUG] [Thread-6] [root/watcher.py:84]: Stylesheet modified: c:\users\kimdb1\.config\yasb\styles.css
+2026-03-18 21:56:17,207 [DEBUG] [Thread-6] [root/watcher.py:84]: Stylesheet modified: c:\users\kimdb1\.config\yasb\styles.css
+2026-03-18 21:56:43,691 [DEBUG] [Thread-6] [root/watcher.py:84]: Stylesheet modified: c:\users\kimdb1\.config\yasb\styles.css
+2026-03-18 22:10:36,511 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-03-19 09:12:38,895 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-03-19 09:12:38,909 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-03-19 09:12:38,935 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-03-19 09:12:39,044 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-03-19 09:12:39,075 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-03-19 09:12:41,025 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-03-19 09:12:41,155 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-03-19 09:12:41,512 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-03-19 09:12:41,513 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\kimdb1\.config\yasb
+2026-03-19 09:12:41,514 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-03-19 09:57:40,696 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\kimdb1\.config\yasb\config.yaml
+2026-03-19 09:57:40,735 [INFO] [MainThread] [root/controller.py:15]: Reloading Application because of config change.
+2026-03-19 09:57:40,850 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-03-19 09:57:40,850 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-03-19 09:57:40,935 [INFO] [MainThread] [root/bar_manager.py:79]: Successfully loaded updated config and re-initialised all bars.
+2026-03-19 09:57:41,249 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...

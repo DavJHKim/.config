@@ -2,11 +2,11 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  startup_commands: ['shell-exec zebar']
+  startup_commands: ['shell-exec yasb']
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
-  shutdown_commands: ['shell-exec taskkill /IM zebar.exe /F']
+  shutdown_commands: ['shell-exec taskkill /IM yasb.exe /F']
 
   # Commands to run after the WM config is reloaded.
   config_reload_commands: []
@@ -44,14 +44,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: '20px'
+  inner_gap: '10px'
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '60px'
-    right: '20px'
-    bottom: '20px'
-    left: '20px'
+    top: '6px'
+    right: '6px'
+    bottom: '6px'
+    left: '6px'
 
 window_effects:
   # Visual effects to apply to the focused window.

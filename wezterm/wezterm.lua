@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local bg_constants = require("bg-constants")
-local act = wezterm.action
+local themes = require("themes")
 local config = wezterm.config_builder()
 local keymaps = require("keymaps")
 
@@ -116,8 +116,8 @@ config.colors = {
   },
 }
 
--- Colors
---config.color_scheme = 'GruvboxDark'
+-- Themes
+config.color_scheme = themes.gruvbox_dark 
 
 -- keymaps
 config.keys = keymaps.get_keys() 

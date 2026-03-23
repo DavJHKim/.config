@@ -117,7 +117,7 @@ config.colors = {
 }
 
 -- Themes
-config.color_scheme = themes.catppuccin_mocha 
+config.color_scheme = themes.gruvbox_dark 
 
 -- keymaps
 config.keys = keymaps.get_keys() 

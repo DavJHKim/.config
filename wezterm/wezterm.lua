@@ -33,7 +33,8 @@ config.tab_max_width = 32
 
 config.window_decorations = "RESIZE"
 config.adjust_window_size_when_changing_font_size = false
-config.font = wezterm.font('JetBrainsMono Nerd Font')
+config.font = wezterm.font('Monocraft')
+--config.font = wezterm.font('JetBrainsMono Nerd Font')
 
 -- Background
 --config.window_background_image = bg_constants.bg_image

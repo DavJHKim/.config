@@ -20,6 +20,10 @@ return {
     "rebelot/kanagawa.nvim",
     lazy = true,
   },
+  {
+    "tpope/vim-vividchalk",
+    lazy = true,
+  },
 }
 
 --return {

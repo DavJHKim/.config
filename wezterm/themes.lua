@@ -90,5 +90,38 @@ M.rebecca = 'Rebecca'
 M.spacegray = 'SpaceGray'
 M.spacedust = 'Spacedust'
 M.zenburn = 'Zenburn'
+M.vividchalk = 'Vividchalk'
+
+M.schemes = {
+  Vividchalk = {
+    foreground = "#ffffff",
+    background = "#000000",
+    cursor_bg = "#ffffff",
+    cursor_fg = "#000000",
+    cursor_border = "#ffffff",
+
+    ansi = {
+      "#000000",
+      "#d70000",
+      "#5fff00",
+      "#ffff00",
+      "#0087ff",
+      "#ff00ff",
+      "#00ffff",
+      "#e5e5e5",
+    },
+
+    brights = {
+      "#666666",
+      "#ff0000",
+      "#87ff00",
+      "#ffff5f",
+      "#5fafff",
+      "#ff5fff",
+      "#5fffff",
+      "#ffffff",
+    },
+  },
+}
 
 return M

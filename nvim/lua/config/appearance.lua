@@ -1,5 +1,5 @@
 -- Colorscheme & Transparency testing
-vim.cmd("colorscheme vividchalk")
+vim.cmd("colorscheme gruvbox")
 
 local function make_transparent()
   local groups = {

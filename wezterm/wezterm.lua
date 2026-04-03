@@ -119,7 +119,7 @@ config.colors = {
 
 -- Themes
 config.color_schemes = themes.schemes
-config.color_scheme = themes.vividchalk
+config.color_scheme = themes.gruvbox_dark
 
 -- keymaps
 config.keys = keymaps.get_keys() 

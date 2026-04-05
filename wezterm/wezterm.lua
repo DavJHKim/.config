@@ -12,7 +12,7 @@ if target:find("windows") then
   config.default_prog = { "pwsh.exe", "-NoLogo" }
 elseif target:find("apple") then
   print("Running on macOS")
-  config.macos_window_background_blur = 40
+  config.macos_window_background_blur = 10
   config.native_macos_fullscreen_mode = true
 elseif target:find("linux") then
   print("Running on Linux")
@@ -33,12 +33,12 @@ config.tab_max_width = 32
 
 config.window_decorations = "RESIZE"
 config.adjust_window_size_when_changing_font_size = false
-config.font = wezterm.font('Monocraft')
---config.font = wezterm.font('JetBrainsMono Nerd Font')
+--config.font = wezterm.font('Monocraft')
+config.font = wezterm.font('JetBrainsMono Nerd Font')
 
 -- Background
 --config.window_background_image = bg_constants.bg_image
-config.window_background_opacity = 1 
+config.window_background_opacity = 0.8
 config.window_background_image_hsb = {
   brightness = bg_constants.brightness,  
   hue = bg_constants.hue,
@@ -80,37 +80,30 @@ config.window_background_image_hsb = {
 --  },
 --}
 
--- Neutral modern tab bar (theme-agnostic)
+local tab_bg = "#1a1a1a" -- tweak this
 
 config.colors = {
   tab_bar = {
-    -- Slightly transparent neutral background
-    background = "#1f1f1f",
+    background = "none",
 
     active_tab = {
-      bg_color = "#3a3a3a",
+      bg_color = "#2a2a2a",
       fg_color = "#ffffff",
       intensity = "Bold",
     },
 
     inactive_tab = {
-      bg_color = "#2a2a2a",
-      fg_color = "#c8c8c8",
-    },
-
-    inactive_tab_hover = {
-      bg_color = "#343434",
-      fg_color = "#ffffff",
-      italic = false,
+      bg_color = tab_bg,
+      fg_color = "#888888",
     },
 
     new_tab = {
-      bg_color = "#2a2a2a",
-      fg_color = "#c8c8c8",
+      bg_color = tab_bg,
+      fg_color = "#888888",
     },
 
     new_tab_hover = {
-      bg_color = "#404040",
+      bg_color = "#303030",
       fg_color = "#ffffff",
       italic = false,
     },

@@ -480,3 +480,12 @@ glazewm_workspaces:
 - Extra inputs are not permitted
 
 2026-03-23 09:19:22,577 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\kimdb1\.config\yasb\config.yaml
+2026-04-05 21:49:23,727 [INFO] [MainThread] [root/log.py:99]: YASB v1.9.1
+2026-04-05 21:49:23,727 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-04-05 21:49:23,728 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-04-05 21:49:25,258 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-04-05 21:49:25,384 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-04-05 21:49:25,602 [DEBUG] [MainThread] [root/win32_accent.py:124]: Failed to apply settings: [WinError 0] The operation completed successfully.
+2026-04-05 21:49:25,691 [INFO] [MainThread] [root/bar_manager.py:95]: Starting SystemEventListener...
+2026-04-05 21:49:25,692 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\usuário\.config\yasb
+2026-04-05 21:49:25,692 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher

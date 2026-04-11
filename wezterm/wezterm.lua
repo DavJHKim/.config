@@ -61,8 +61,6 @@ config.window_background_image_hsb = {
 --      bg_color = "#3c3836", -- Dark gray
 --      fg_color = "#ebdbb2", -- Light foreground
 --    },
---
---    inactive_tab_hover = {
 --      bg_color = "#504945", -- Slightly lighter gray
 --      fg_color = "#fbf1c7", -- Brighter foreground
 --      italic = true,
@@ -85,7 +83,7 @@ local tab_bg = "#1a1a1a" -- tweak this
 
 config.colors = {
   tab_bar = {
-    background = "none",
+    background = "#2a2a2a",
 
     active_tab = {
       bg_color = "#2a2a2a",

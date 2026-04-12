@@ -10,7 +10,6 @@ local target = wezterm.target_triple
 if target:find("windows") then
   print("Running on Windows")
   config.default_prog = { "pwsh.exe", "-NoLogo" }
-  config.win32_system_backdrop = "Acrylic" 
 elseif target:find("apple") then
   print("Running on macOS")
   config.macos_window_background_blur = 10
@@ -39,7 +38,7 @@ config.font = wezterm.font('JetBrainsMono Nerd Font')
 
 -- Background
 --config.window_background_image = bg_constants.bg_image
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 config.window_background_image_hsb = {
   brightness = bg_constants.brightness,  
   hue = bg_constants.hue,

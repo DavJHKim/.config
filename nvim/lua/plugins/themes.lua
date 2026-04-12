@@ -24,6 +24,11 @@ return {
     "tpope/vim-vividchalk",
     lazy = true,
   },
+  {
+  	"rose-pine/neovim",
+    name = "rose-pine",
+    lazy = true,
+  },
 }
 
 --return {

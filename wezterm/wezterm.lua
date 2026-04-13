@@ -9,13 +9,16 @@ local target = wezterm.target_triple
 
 if target:find("windows") then
   print("Running on Windows")
+  config.window_background_opacity = 0.85
   config.default_prog = { "pwsh.exe", "-NoLogo" }
 elseif target:find("apple") then
   print("Running on macOS")
+  config.window_background_opacity = 0.9
   config.macos_window_background_blur = 10
   config.native_macos_fullscreen_mode = true
 elseif target:find("linux") then
   print("Running on Linux")
+  config.window_background_opacity = 0.9
 end
 
 -- Toggle bar function
@@ -38,7 +41,6 @@ config.font = wezterm.font('JetBrainsMono Nerd Font')
 
 -- Background
 --config.window_background_image = bg_constants.bg_image
-config.window_background_opacity = 0.9
 config.window_background_image_hsb = {
   brightness = bg_constants.brightness,  
   hue = bg_constants.hue,

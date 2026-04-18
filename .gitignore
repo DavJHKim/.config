@@ -3,3 +3,8 @@
 gh/
 uv/
 scoop/
+
+# Firefox / Mozilla
+.mozilla/
+.config/mozilla/
+.var/app/org.mozilla.firefox/

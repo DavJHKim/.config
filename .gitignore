@@ -5,6 +5,9 @@ uv/
 scoop/
 
 # Firefox / Mozilla
+mozilla/
 .mozilla/
 .config/mozilla/
 .var/app/org.mozilla.firefox/
+
+pulse/

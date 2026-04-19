@@ -1,0 +1,67 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  min-height: 0;
+}
+
+/* Bar container */
+window#waybar {
+  background: transparent;
+  border-radius: 12px;
+  color: #e5e5e5;
+}
+
+/* Workspace buttons */
+#workspaces {
+  margin: 6px 8px;
+  padding: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+#workspaces button {
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 8px;
+  color: #888;
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* Hover effect */
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Module styling */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio {
+  margin: 6px 4px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+/* Tray */
+#tray {
+  margin: 6px 8px;
+}
+
+/* Subtle hover for modules */
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

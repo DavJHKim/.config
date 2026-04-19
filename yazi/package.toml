@@ -15,3 +15,18 @@ hash = "564f2335540ee2c440c3b671bc28ac60"
 use = "Chromium-3-Oxide/everforest-medium"
 rev = "0158f0f"
 hash = "a7c36abf0b13289aceb1c20a17c6a63e"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine"
+rev = "d91f8f2"
+hash = "87da3630653b6d272e43658418599188"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-moon"
+rev = "94385fe"
+hash = "edbe0dfb5db8ff37281dba62adc7e750"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-dawn"
+rev = "d82f54f"
+hash = "15ae5f83d3770b9ffc276af77f642e2b"

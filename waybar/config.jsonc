@@ -11,7 +11,7 @@
   "modules-right": ["pulseaudio", "network", "cpu", "memory", "tray"],
 
   "clock": {
-    "format": "  {:%H:%M}",
+    "format": "  {:%b %d %H:%M}",
     "tooltip-format": "{:%A, %d %B %Y}"
   },
 

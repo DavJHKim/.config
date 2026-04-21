@@ -9,6 +9,9 @@ mozilla/
 .mozilla/
 .config/mozilla/
 .var/app/org.mozilla.firefox/
+BraveSoftware/
+
+mimeapps.list
 
 pulse/
 discord/

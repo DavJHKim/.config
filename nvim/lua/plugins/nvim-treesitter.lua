@@ -11,7 +11,7 @@ return {
       indent = { enable = true },
       ensure_installed = {
         "lua", "vim", "vimdoc", "bash", "python", "javascript",
-        "typescript", "c", "cpp", "c_sharp", "json", "yaml",
+        "typescript", "c", "cpp", "c_sharp", "json", "yaml", "markdown"
       }, -- choose the languages you need
       auto_install = true,
     })

@@ -6,6 +6,8 @@ source ~/.config/.env
 set +a
 
 export XDG_CONFIG_HOME="$HOME/.config"
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_STYLE_OVERRIDE=kvantum
 
 # -------------------------------
 # History Settings

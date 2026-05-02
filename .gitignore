@@ -26,3 +26,6 @@ obsidian/
 xsettingsd/
 nwg-look/
 dconf/
+
+QtProject.conf
+assets

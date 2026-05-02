@@ -1,29 +1,36 @@
 return {
   "obsidian-nvim/obsidian.nvim",
-  version = "*", -- use latest release, remove to use latest commit
-  ---@module 'obsidian'
-  ---@type obsidian.config
+  version = "*",
   opts = {
-    legacy_commands = false, -- this will be removed in 4.0.0
+    legacy_commands = false,
+
     workspaces = {
       {
         name = "vaults",
         path = "~/vaults",
       },
-      --{
-      --  name = "work",
-      --  path = "~/vaults/work",
-      --},
     },
+
     daily_notes = {
       enabled = true,
-      folder = "calendar/daily",
+      folder = "time/daily",
       date_format = "YYYY-MM-DD",
-      default_tags = { "journal", "daily" },
+      default_tags = { "daily-notes", "calendar", "journal", "daily" },
+      
     },
 
     completion = {
       nvim_cmp = true,
+    },
+
+    -- IMPORTANT: prevent race condition with oil.nvim
+    ui = {
+      enable = false,
+    },
+
+    -- (extra safety if your version still uses footer separately)
+    footer = {
+      enabled = false,
     },
   },
 }

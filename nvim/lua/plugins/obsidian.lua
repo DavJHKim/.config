@@ -17,7 +17,7 @@ return {
     },
     daily_notes = {
       enabled = true,
-      folder = "daily",
+      folder = "calendar/daily",
       date_format = "YYYY-MM-DD",
       default_tags = { "journal", "daily" },
     },

@@ -10,6 +10,7 @@ mozilla/
 .config/mozilla/
 .var/app/org.mozilla.firefox/
 BraveSoftware/
+librewolf/
 
 mimeapps.list
 

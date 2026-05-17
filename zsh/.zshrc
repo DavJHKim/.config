@@ -32,7 +32,7 @@ eval "$(zoxide init zsh)"
 # Useful Aliases
 # -------------------------------
 
-alias ls='ls -lah --group-directories-first --color=auto'
+alias ls='ls -lah --color=auto'
 alias la='ls -A --color=auto'
 alias gstatus='git status'
 alias gadd='git add .'

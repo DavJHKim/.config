@@ -32,7 +32,8 @@ eval "$(zoxide init zsh)"
 # Useful Aliases
 # -------------------------------
 
-alias ll='ls -lah'
+alias ls='ls -lah --group-directories-first --color=auto'
+alias la='ls -A --color=auto'
 alias gstatus='git status'
 alias gadd='git add .'
 alias gcom='git commit -m'
@@ -56,3 +57,16 @@ PROMPT='%F{cyan}%n@%m%f %F{yellow}%~%f %# '
 # -------------------------------
 # Bindings 
 # -------------------------------
+
+# Esc key to backwards kill line
+bindkey '^[^?' backward-kill-line
+
+# Ctrl+Backspace delete previous word
+bindkey '^H' backward-kill-word
+
+# Ctrl+U delete whole line
+bindkey '^U' kill-whole-line
+
+# Ctrl+Arrow navigation (if terminal supports it)
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word

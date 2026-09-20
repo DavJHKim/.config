@@ -1,0 +1,5 @@
+# LINUX
+grim
+swappy
+slurp
+wl-clipboard

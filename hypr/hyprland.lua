@@ -248,6 +248,12 @@ hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
 -- Window management
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
 
+-- Screenshots
+hl.bind(
+    "SUPER + S",
+    hl.dsp.exec_cmd([[grim -g "$(slurp)" - | swappy -f -]])
+)
+
 hl.bind(
     "SUPER + SHIFT + Q",
     hl.dsp.exec_cmd(
